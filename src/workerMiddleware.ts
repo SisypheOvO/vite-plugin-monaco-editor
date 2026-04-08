@@ -41,8 +41,7 @@ export function getWorkPath(
     if (isCDN(publicPath)) {
       workerPaths[work.label] = publicPath + '/' + getFilenameByEntry(work.entry)
     } else {
-      workerPaths[work.label] =
-        config.base + publicPath + '/' + getFilenameByEntry(work.entry)
+      workerPaths[work.label] = config.base + publicPath + '/' + getFilenameByEntry(work.entry)
     }
   }
 

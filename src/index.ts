@@ -19,7 +19,8 @@ export function resolveMonacoPath(filePath: string): string {
   if (fs.existsSync(localPath)) {
     return localPath
   }
-  return require.resolve(filePath)
+  // fallback: let rolldown/Node resolve the specifier directly
+  return filePath
 }
 
 export function getWorks(options: IMonacoEditorOpts) {
@@ -84,7 +85,7 @@ export default function monacoEditorPlugin(options: IMonacoEditorOpts): Plugin {
   let resolvedConfig: ResolvedConfig
 
   return {
-    name: 'vite-plugin-moncao-editor',
+    name: 'vite-plugin-monaco-editor',
     configResolved(getResolvedConfig) {
       resolvedConfig = getResolvedConfig
     },
