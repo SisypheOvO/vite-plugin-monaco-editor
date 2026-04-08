@@ -1,6 +1,7 @@
 {
   "name": "vite-plugin-monaco-editor",
   "version": "1.1.0",
+  "type": "module",
   "description": "A vite plugin for the Monaco Editor",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,21 +34,21 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@okikio/sharedworker": "^1.0.3",
-    "@types/fs-extra": "^9.0.13",
-    "@types/node": "^16.4.13",
-    "@vitejs/plugin-vue": "^1.4.0",
-    "@vue/compiler-sfc": "^3.1.5",
-    "fs-extra": "^10.0.0",
-    "http-server": "^13.0.2",
-    "monaco-editor": "^0.33.0",
+    "@okikio/sharedworker": "^1.1.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.5.2",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "@vue/compiler-sfc": "^3.5.32",
+    "fs-extra": "^11.3.4",
+    "http-server": "^14.1.1",
+    "monaco-editor": "^0.52.2",
     "monaco-graphql": "^1.7.3",
     "prettier": "^3.8.1",
-    "rolldown": "^1.0.0-rc.13",
-    "typescript": "^4.3.5",
-    "vite": "^2.4.4",
-    "vue": "^3.1.5",
-    "vue-router": "^4.0.12"
+    "rolldown": "^1.0.0-rc.14",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.7",
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
   },
   "peerDependencies": {
     "monaco-editor": ">=0.33.0"
