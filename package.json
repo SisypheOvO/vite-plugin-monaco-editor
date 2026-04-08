@@ -5,8 +5,15 @@
   "description": "A vite plugin for the Monaco Editor",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "prepublish": "npm run copy:cdn",
     "format": "prettier --write . --end-of-line auto",
     "test:build": "npm run build && vite build --config test/vite.config.js",
