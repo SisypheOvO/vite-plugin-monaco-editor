@@ -1,11 +1,11 @@
-const fse = require('fs-extra')
+import { existsSync, copySync } from 'fs-extra'
 
 const src = 'test/dist/a/monacoeditorwork'
 const dest = 'cdn'
 
-if (!fse.existsSync(src)) {
+if (!existsSync(src)) {
   console.log('[copy:cdn] skip, source not found:', src)
   process.exit(0)
 }
 
-fse.copySync(src, dest, {})
+copySync(src, dest, {})
