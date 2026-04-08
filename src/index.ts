@@ -2,7 +2,7 @@ import { HtmlTagDescriptor, Plugin, ResolvedConfig } from 'vite'
 import * as path from 'path'
 import * as fs from 'fs'
 
-import { EditorLanguageWorks, IWorkerDefinition, languageWorksByLabel } from './lnaguageWork.js'
+import { EditorLanguageWorks, IWorkerDefinition, languageWorksByLabel } from './languageWork.js'
 import {
   workerMiddleware,
   cacheDir,

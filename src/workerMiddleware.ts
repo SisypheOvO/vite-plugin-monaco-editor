@@ -1,6 +1,6 @@
 import { Connect, ResolvedConfig } from 'vite'
 import { getWorks, IMonacoEditorOpts, isCDN, resolveMonacoPath } from './index.js'
-import { IWorkerDefinition, languageWorksByLabel } from './lnaguageWork.js'
+import { IWorkerDefinition, languageWorksByLabel } from './languageWork.js'
 import { build } from 'rolldown'
 import * as fs from 'fs'
 import * as path from 'path'
