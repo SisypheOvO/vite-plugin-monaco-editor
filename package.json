@@ -7,6 +7,7 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run copy:cdn",
+    "format": "prettier --write . --end-of-line auto",
     "test:build": "npm run build && vite build --config test/vite.config.js",
     "test:dev": "npm run build && vite --config test/vite.config.js",
     "test:preview": "vite preview --config test/vite.config.js",
@@ -40,7 +41,9 @@
     "fs-extra": "^10.0.0",
     "http-server": "^13.0.2",
     "monaco-editor": "^0.33.0",
-    "monaco-graphql": "^0.4.4",
+    "monaco-graphql": "^1.7.3",
+    "prettier": "^3.8.1",
+    "rolldown": "^1.0.0-rc.13",
     "typescript": "^4.3.5",
     "vite": "^2.4.4",
     "vue": "^3.1.5",

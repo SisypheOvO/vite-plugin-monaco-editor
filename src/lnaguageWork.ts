@@ -1,8 +1,7 @@
 export interface IWorkerDefinition {
-  label: string;
-  entry: string;
+  label: string
+  entry: string
 }
-
 
 export const languageWorkAttr: IWorkerDefinition[] = [
   {
@@ -25,15 +24,13 @@ export const languageWorkAttr: IWorkerDefinition[] = [
     label: 'typescript',
     entry: 'monaco-editor/esm/vs/language/typescript/ts.worker',
   },
-];
+]
 
-
-const languageWorksByLabel: { [language: string]: IWorkerDefinition } = {};
+const languageWorksByLabel: { [language: string]: IWorkerDefinition } = {}
 languageWorkAttr.forEach(
   (languageWork) => (languageWorksByLabel[languageWork.label] = languageWork)
-);
+)
 
-export {languageWorksByLabel}
-
+export { languageWorksByLabel }
 
 export type EditorLanguageWorks = 'css' | 'html' | 'json' | 'typescript' | 'editorWorkerService'
